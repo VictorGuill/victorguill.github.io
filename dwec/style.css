@@ -33,7 +33,7 @@ h1,h2 {
 h2 {
     align-self: flex-start;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #mainTitle {
@@ -86,4 +86,10 @@ a{
 
 .jsfiddle {
     border: 1px solid #fff;
+}
+
+p{
+    font-family: 'Hind', sans-serif;
+    align-self: flex-start;
+    margin-bottom: 10px;
 }
