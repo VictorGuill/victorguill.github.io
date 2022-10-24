@@ -88,6 +88,10 @@ hr.rounded {
   background-color: rgb(194, 251, 49);
 }
 
+.hover4:hover {
+  background-color: rgb(189, 124, 255);
+}
+
 .exercise:hover p {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
