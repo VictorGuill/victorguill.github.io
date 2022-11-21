@@ -118,3 +118,34 @@ p {
   align-self: flex-start;
   margin-bottom: 10px;
 }
+
+/* #region Practica 7 */
+
+.js_test {
+  height: auto;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+
+  color: black;
+}
+
+.btn {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+
+  font-family: "Expletus Sans", cursive;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* #endregion */
