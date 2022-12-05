@@ -13,11 +13,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
 
   listTodo.addEventListener("click", (e) => {
-    listDone.appendChild(deleteTaskAndCreateNew(e.path[0].id));
+    console.log(e.target.id);
+    listDone.appendChild(deleteTaskAndCreateNew(e.target.id));
   });
 
   listDone.addEventListener("click", (e) => {
-    listTodo.appendChild(deleteTaskAndCreateNew(e.path[0].id));
+    listTodo.appendChild(deleteTaskAndCreateNew(e.target.id));
   });
 
   function createTaskTodo(value) {
