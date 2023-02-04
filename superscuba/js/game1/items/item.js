@@ -38,7 +38,7 @@ export default class Item {
     this.dom.setAttribute("class", type);
 
     // set item image/
-    const img_path = "/media/game1_assets/" + type + "/" + this.num + ".png";
+    const img_path = "/superscuba/media/game1_assets/" + type + "/" + this.num + ".png";
     this.dom.style.backgroundImage = "url(" + img_path + ")";
 
     // set item size
