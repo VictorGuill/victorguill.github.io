@@ -2,11 +2,9 @@ export default class Ui {
   constructor(id) {
     this.id = id;
     this.ui = document.createElement("div");
-
-    this.add();
   }
 
-  // create div with object id and appends to DOM
+  // set iu div attributes and append to DOM
   add() {
     // add ui container
     this.ui.setAttribute("id", this.id);
@@ -21,7 +19,7 @@ export default class Ui {
     // add game name
     const game_text = document.createElement("p");
     game_text.setAttribute("id", "game_text");
-    game_text.innerHTML = "scuba-test";
+    game_text.innerHTML = "SUPER SCUBA";
     game_text.style.color = "#ea5000";
     this.ui.appendChild(game_text);
 
@@ -31,19 +29,16 @@ export default class Ui {
     this.ui.appendChild(timer_text);
   }
 
-  // sets new map height and width
-  Resize() {
-    let properties = this.ui.getBoundingClientRect();
-
-    this.width = properties.width;
-    this.height = properties.height;
+  // removes div from DOM
+  remove() {
+    this.ui.remove();
   }
 
-  updateValues(player, runtime) {
+  updateValues(player, gameplayTimeLeft) {
     const trash_text = document.getElementById("trashText");
-    trash_text.innerHTML = "trash: " + player.trash_collected;
+    trash_text.innerHTML = "score: " + player.trash_collected;
 
-    timer_text.innerHTML = secondsToTime(runtime / 1000) + "s";
+    timer_text.innerHTML = secondsToTime(gameplayTimeLeft) + "s";
     +"s";
   }
 }
