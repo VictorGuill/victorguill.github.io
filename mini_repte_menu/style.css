@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+  --cBlack: #242444;
+  /* Elimina efecte blau al pulsar en phones ⬇️ */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+
+  display: grid;
+  place-items: center;
+}
+
+#container {
+  width: 100%;
+  max-width: 1140px;
+
+  padding: 0 50px;
+}
+
+#startMsg {
+  margin-top: 25px;
+}
+
+h1 {
+  margin: 40px 0 25px;
+  color: var(--cBlack);
+}
+
+h1 span {
+  font-size: 3rem;
+  font-weight: lighter;
+}
+
+#navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding-inline-start: 0px;
+  list-style-type: none;
+}
+
+#navigation ul li {
+  padding: 10px 20px;
+  margin: 0 10px 10px 0;
+  border: 1px solid var(--cBlack);
+  color: var(--cBlack);
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.1s ease-in-out;
+  width: 140px;
+  text-align: center;
+}
+
+#navigation ul li:hover {
+  font-weight: bold;
+  box-shadow: inset 0px 0px 0px 1px var(--cBlack);
+  transform: translateY(-2px);
+}
+
+#navigation ul li:active {
+  transform: translateY(2px);
+}
+
+.link-active {
+  background-color: var(--cBlack);
+  color: white !important;
+  font-weight: bold;
+}
+
+#commanda-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  width: 100%;
+  border: 1px solid var(--cBlack);
+  border-radius: 8px;
+}
+
+#plats-container {
+  width: 55%;
+  height: 100%;
+  padding: 0 10px;
+}
+
+client-ticket {
+  width: 45%;
+  height: 100%;
+  border: 1px solid var(--cBlack);
+  border-radius: 8px;
+  margin: 15px 10px 10px 0px;
+  align-self: flex-start;
+}
+
+@media (max-width: 920px) {
+  #commanda-container {
+    flex-direction: column;
+  }
+  #plats-container {
+    width: 100%;
+  }
+  client-ticket {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  #container {
+    padding: 0;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h1 span {
+    font-size: 2rem;
+  }
+  #navigation ul li {
+    margin: 0 0 5px 10px;
+    width: calc(100% - 20px);
+  }
+}
