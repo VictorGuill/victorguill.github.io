@@ -36,9 +36,9 @@ body {
 }
 
 /* Disable timeline */
-/* #video-player::-webkit-media-controls-timeline {
+#video-player::-webkit-media-controls-timeline {
   display: none;
-} */
+}
 
 #play-button {
   position: absolute;
