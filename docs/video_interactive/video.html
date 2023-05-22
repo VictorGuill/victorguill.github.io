@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M12 - Video interactiu</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="video-container">
+      <video id="video-player" src="/assets/videoInteractivo.mp4" controls></video>
+      <button id="play-button">▶️</button>
+      <div id="scuba-btn" class="target-button" onclick="skipVideoTo(21)">
+        SUPER <br />
+        SCUBA
+      </div>
+      <div id="broggi-btn" class="target-button" onclick="skipVideoTo(61)">BROGGI <br />112</div>
+
+      <div id="otro-btn" class="target-button">OTRO PROYECTO</div>
+
+      <div id="jugar-scuba" class="target-button">JUGAR SUPER SCUBA</div>
+      <div id="linkedin" class="target-button">Mi LinkedIn</div>
+    </div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
