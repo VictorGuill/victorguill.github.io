@@ -119,6 +119,28 @@ body {
   height: 30%;
 }
 
+#jugar-scuba {
+  top: 21%;
+  right: 4%;
+
+  width: 31%;
+  height: 22%;
+
+  text-decoration: none;
+  color: black;
+}
+
+#linkedin {
+  top: 21%;
+  left: 4%;
+
+  width: 31%;
+  height: 22%;
+
+  text-decoration: none;
+  color: black;
+}
+
 @media (width > 1000px) {
   #video-player {
     width: 80vw;
